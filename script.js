@@ -2,8 +2,8 @@ var pet = {
     name:"",
     type:"",
     age:0,
-    happiness:50,
-    hunger:50,
+    happiness:0,
+    hunger:0,
     feed: function(){
         if(pet.hunger > 0 && pet.hunger < 101){
         pet.hunger = pet.hunger - 20;
@@ -34,7 +34,8 @@ var pet = {
 pet.name = prompt("Enter your pet name?")
 pet.type = prompt("Enter your pet type such as cat, dog, goat etc.")
 pet.age = +prompt("How old your pet is?")
-
+pet.happiness = prompt("How happpy is your pet?")
+pet.hunger = prompt("How hunger is your pet?")
 while(true){
     var request = +prompt(`What would you like to do with ${pet.name} \n 1. Feed \n 2. Play \n 3. Age \n 4. Exit`)
     switch(request){
