@@ -7,7 +7,38 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Virtual Pet</h1>
+    
+    <h1 style="text-align: center;">Virtual Pet</h1>
+    <div class="formwrapper">
+        
+    <form action="">
+       <div class="form-control">
+          <input type="text"  id="petname" placeholder="Enter your pet name">
+       </div>
+       <div class="form-control">
+        <input type="text"  id="pettype" placeholder="Enter your pet type">
+     </div>
+     <div class="form-control">
+        <input type="number"  id="petage" placeholder="Enter your pet age" min="1" max="100" step="1">
+     </div>
+     <div class="form-control">
+        <input type="number"  id="pethappiness" placeholder="Enter your pet happiness" min="1" max="100" step="1">
+     </div>
+     <div class="form-control">
+        <input type="number"  id="pethunger" placeholder="Enter your pet hunger" min="1" max="100" step="1">
+     </div>
+     <div >
+        <button class="btn" id="play">play</button>
+        <button class="btn"  id="feed">feed</button>
+        <button class="btn" id="age">age</button>
+        <button class="btn" id="exit">Exit</button>
+        <br>
+     </div>
+     <div id="result">
+        
+     </div>
+    </form>
+</div>
     <script src="./script.js"></script>
 </body>
 </html>

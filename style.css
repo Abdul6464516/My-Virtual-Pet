@@ -1,0 +1,98 @@
+/* Form Wrapper with reduced width */
+/* Hide number input field scrollbar in Chrome, Safari, and Edge */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide number input field scrollbar in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.formwrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Reduced width */
+    background-color: rgba(35, 161, 155, 0.2);
+    border: 2px solid rgb(35, 161, 155);
+    border-radius: 5px;
+    padding: 10px; /* Reduced padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Body styling for full-screen centering */
+body {
+    background-image: url("./aji.avif");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form control adjustments for spacing */
+.form-control {
+    width: 100%;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+/* Input field styling with reduced dimensions */
+input {
+    width: calc(100% - 10px); /* Reduced width calculation */
+    padding: 8px; /* Reduced padding */
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(102, 122, 116);
+    color: white;
+    font-size: 12px;
+}
+
+/* Placeholder color for inputs */
+input::placeholder {
+    color: white;
+}
+
+/* Button styling with consistent size */
+.btn {
+    width: 65px; /* Smaller button width */
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(35, 161, 155);
+    margin: 3px; /* Adjusted margin */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+#btn:hover {
+    background-color: rgb(50, 200, 190);
+}
+
+/* Container for centering buttons */
+button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .formwrapper {
+        width: 90%;
+        padding: 10px; /* Reduced padding on small screens */
+    }
+    input {
+        width: calc(100% - 10px); /* Adjusted for smaller screens */
+    }
+    #btn {
+        width: 60px; /* Smaller button size on small screens */
+    }
+}
